@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+    <title>Misna Library</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <h1>simple<span>L</span>ibrary</h1>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#favorite">Favorite</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="burger-icon" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article class="home" id="home">
+                <div class="content-home">
+                    <h1>WORDS'<br> ADVENTURE</h1>
+                    <h3>menemukan dunia baru dalam buku</h3>
+                </div>
+                <img class="home-bg" src="assets/image/bg1.jpg"/>
+            </article>
+
+            <article class="favorite" id="favorite">
+                <h1>My Favorite Book</h1>
+                <div class="content-favorite">
+                    <div class="box">
+                         <img class="fav" src="assets/image/fav-khadijah.jpg"/>
+                         <div class="book-text">
+                            <h3>Khadijah</h3>
+                            <p>by Sumayya Muhammad</p>
+                         </div>
+                    </div>
+                    <div class="box">
+                         <img class="fav" src="assets/image/fav-kita-dan-kata.jpg"/>
+                         <div class="book-text">
+                            <h3>Kita dan Kata</h3>
+                            <p>by Setiyanto Hendri</p>
+                         </div>
+                    </div>
+                    <div class="box">
+                         <img class="fav" src="assets/image/fav-bumi-cinta.jpg"/>
+                         <div class="book-text">
+                            <h3>Bumi Cinta</h3>
+                            <p>by Habiburrahman El Shirazy</p>
+                         </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="review" id="review">
+                <div class="review-title">
+                    <button></button>
+                    <h1>Review</h1>
+                </div>
+                <div class="review-content">
+                    <button class="scroll-button scroll-left">&#60;</button>
+                    <div class="book">
+                        <div class="book-title">
+                            <h2>Laut<br>Bercerita</h2>
+                            <p>by Leila S. Chudori</p>
+                        </div>
+                        <img src="assets/image/collection/Laut-Bercerita.jpg"/>
+                        <div class="book-review">
+                            <h3>My Review :</h3>
+                            <p>Sebelumnya, saya mendapat banyak ulasan menarik mengenai buku ini. 
+                                Ketika saya bertanya kepada seorang teman tentang buku apa yang dia rekomendasikan, 
+                                salah satu buku yang dia sebut adalah Laut Bercerita ini. 
+                                Akhirnya, saya memutuskan untuk membeli dan membacanya. 
+                            </p>
+                            <p>Seperti judulnya, <strong>Laut Bercerita ternyata benar-benar Laut yang bercerita.</strong>
+                            Tokoh utama novel ini bernama Laut Biru, seorang mahasiswa Sastra Inggris di Yogyakarta...</p>
+                            <button>Selengkapnya</button>
+                        </div>
+                    </div>
+                    <button class="scroll-button scroll-right">&#62;</button>
+                </div>
+            </article>
+
+            <article class="collection" id="collection">
+                <h1>My Book Collection</h1>
+                <div class="book-collection">
+                    <div class="box-c">
+                        <img src="assets/image/collection/insecurity.jpeg"/>
+                    </div>
+                    <div class="box-c">
+                        <img src="assets/image/collection/loneliness.jpeg"/>
+                    </div>
+                    <div class="box-c">
+                        <img src="assets/image/collection/Laut-Bercerita.jpg"/>
+                    </div>
+                    <div class="box-c">
+                        <img src="assets/image/collection/jktpbbs.jpeg"/>
+                    </div>
+                    <div class="box-c">
+                        <img src="assets/image/collection/jktpjaa.jpeg"/>
+                    </div>
+                    <div class="box-c">
+                        <img src="assets/image/collection/jktpjc.jpg"/>
+                    </div>
+                    <div class="box-c">
+                        <img src="assets/image/collection/buku_atomic_habits.jpg"/>
+                    </div>
+                    <div class="box-c">
+                        <img src="assets/image/collection/secret-of-divine-love.jpg"/>
+                    </div>
+                </div>
+                <button>All Books</button>
+            </article>
+
+            <article class="about-us" id="about">
+                <h1>About Us</h1>
+                <div class="aboutUs-content">
+                    <div class="aboutUs-text">
+                        <p>Welcome to Simple Library - a haven for book enthusiasts!</p>
+                        <p>"I am passionate about books, curating my collection with love. 
+                            Join me on a literary journey as I share personal views and insights. 
+                            Let's explore the world of literature together."</p>
+                        <p>Happy Reading, <br>Misnawati Salsab</p>
+                    </div>
+                    <img src="assets/image/about.png"/>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <article class="profile">
+                <h1>Reader Profile</h1>
+                <img src="assets/image/profile.jpg"/>
+                <section class="biodata">
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Misnawati</td>
+                        </tr>
+                        <tr>
+                            <th>TTL</th>
+                            <td>Bulukumba, 28 Agustus 2004</td>
+                        </tr>
+                        <tr>
+                            <th>Domisili</th>
+                            <td>Makassar, Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>misnawati240804gmail.com</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&#169;2022 Simple Library</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var navList = document.getElementById("nav-list");
+            navList.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
